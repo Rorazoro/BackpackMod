@@ -1,11 +1,11 @@
 {
 	"credit": "Made with Blockbench",
 	"textures": {
+		"0": "backpack/basetexture",
 		"1": "backpack/medaltexture",
 		"2": "backpack/straptexture",
 		"3": "backpack/toptexture",
-		"4": "backpack/basetexture",
-		"particle": "backpack/medaltexture"
+		"particle": "backpack/basetexture"
 	},
 	"elements": [
 		{
@@ -143,12 +143,12 @@
 			"to": [12, 11, 9],
 			"rotation": {"angle": 0, "axis": "y", "origin": [9, 9, 13]},
 			"faces": {
-				"north": {"uv": [3, 3, 9, 12], "texture": "#4"},
-				"east": {"uv": [0, 3, 3, 12], "texture": "#4"},
-				"south": {"uv": [12, 3, 18, 12], "texture": "#4"},
-				"west": {"uv": [9, 3, 12, 12], "texture": "#4"},
-				"up": {"uv": [9, 3, 3, 0], "texture": "#4"},
-				"down": {"uv": [15, 0, 9, 3], "texture": "#4"}
+				"north": {"uv": [3, 3, 9, 12], "texture": "#0"},
+				"east": {"uv": [0, 3, 3, 12], "texture": "#0"},
+				"south": {"uv": [12, 3, 18, 12], "texture": "#0"},
+				"west": {"uv": [9, 3, 12, 12], "texture": "#0"},
+				"up": {"uv": [9, 3, 3, 0], "texture": "#0"},
+				"down": {"uv": [15, 0, 9, 3], "texture": "#0"}
 			}
 		}
 	],

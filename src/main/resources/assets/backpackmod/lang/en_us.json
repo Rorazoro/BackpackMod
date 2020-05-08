@@ -1,5 +1,9 @@
 {
   "itemGroup.backpackmod": "Backpack Mod",
 
-  "block.backpackmod.backpack_block": "Backpack"
+  "block.backpackmod.backpack": "Backpack",
+
+  "item.backpackmod.backpack": "Backpack",
+
+  "container.backpack" : "Backpack"
 }

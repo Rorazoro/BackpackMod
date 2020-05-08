@@ -13,6 +13,6 @@ public class BlockInit {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS,
             ModConstants.MODID);
 
-    public static final RegistryObject<BackpackBlock> BACKPACK_BLOCK = BLOCKS.register("backpack_block",
+    public static final RegistryObject<BackpackBlock> BACKPACK = BLOCKS.register("backpack",
             () -> new BackpackBlock(Block.Properties.create(Material.ROCK)));
 }

@@ -1,6 +1,8 @@
 package com.github.rorazoro.backpackmod;
 
 import com.github.rorazoro.backpackmod.init.BlockInit;
+import com.github.rorazoro.backpackmod.init.ContainerInit;
+import com.github.rorazoro.backpackmod.init.ItemInit;
 import com.github.rorazoro.backpackmod.util.ModConstants;
 
 import org.apache.logging.log4j.LogManager;
@@ -18,6 +20,7 @@ public class Main {
         final IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         BlockInit.BLOCKS.register(modEventBus);
-        //ItemInit.ITEMS.register(modEventBus);
+        ItemInit.ITEMS.register(modEventBus);
+        ContainerInit.CONTAINER_TYPES.register(modEventBus);
     }
 }
