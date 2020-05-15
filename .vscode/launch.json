@@ -12,7 +12,7 @@
       "args": "",
       "env": {
         "MOD_CLASSES": "examplemod%%${workspaceFolder}\\bin\\main;examplemod%%${workspaceFolder}\\bin\\main",
-        "MCP_MAPPINGS": "snapshot_20200504-1.15.1",
+        "MCP_MAPPINGS": "snapshot_20200515-1.15.1",
         "MCP_VERSION": "20200122.131323",
         "FORGE_VERSION": "31.1.0",
         "assetIndex": "1.15",
@@ -34,7 +34,7 @@
       "args": "--mod examplemod --all --output \"E:\\My Code\\PersonalProjects\\Minecraft Mods\\BackpackMod\\src\\generated\\resources\"",
       "env": {
         "MOD_CLASSES": "examplemod%%${workspaceFolder}\\bin\\main;examplemod%%${workspaceFolder}\\bin\\main",
-        "MCP_MAPPINGS": "snapshot_20200504-1.15.1",
+        "MCP_MAPPINGS": "snapshot_20200515-1.15.1",
         "MCP_VERSION": "20200122.131323",
         "FORGE_VERSION": "31.1.0",
         "FORGE_GROUP": "net.minecraftforge",
@@ -53,7 +53,7 @@
       "args": "",
       "env": {
         "MOD_CLASSES": "examplemod%%${workspaceFolder}\\bin\\main;examplemod%%${workspaceFolder}\\bin\\main",
-        "MCP_MAPPINGS": "snapshot_20200504-1.15.1",
+        "MCP_MAPPINGS": "snapshot_20200515-1.15.1",
         "MCP_VERSION": "20200122.131323",
         "FORGE_VERSION": "31.1.0",
         "FORGE_GROUP": "net.minecraftforge",

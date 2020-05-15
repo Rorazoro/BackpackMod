@@ -1,13 +1,13 @@
 package com.github.rorazoro.backpackmod.util.helpers;
 
-import net.minecraft.inventory.Inventory;
+import net.minecraft.inventory.IInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.nbt.ListNBT;
 
 public class InventoryHelper
 {
-    public static ListNBT saveAllItems(ListNBT list, Inventory inventory)
+    public static ListNBT saveAllItems(ListNBT list, IInventory inventory)
     {
         for(int i = 0; i < inventory.getSizeInventory(); ++i)
         {
@@ -23,7 +23,7 @@ public class InventoryHelper
         return list;
     }
 
-    public static void loadAllItems(ListNBT list, Inventory inventory)
+    public static void loadAllItems(ListNBT list, IInventory inventory)
     {
         for(int i = 0; i < list.size(); i++)
         {

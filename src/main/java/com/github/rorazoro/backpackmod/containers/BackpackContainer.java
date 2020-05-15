@@ -9,22 +9,22 @@ import net.minecraft.inventory.IInventory;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.inventory.container.Slot;
 import net.minecraft.item.ItemStack;
+import net.minecraft.network.PacketBuffer;
 
 public class BackpackContainer extends Container {
 
     private final IInventory backpackInventory;
     private final int rows;
 
-    public BackpackContainer(int windowId, PlayerInventory playerInventory, int backpackRows) {
-        this(windowId, playerInventory, new BackpackInventory(9 * backpackRows), backpackRows);
+    public BackpackContainer(int windowId, PlayerInventory playerInventory, PacketBuffer data) {
+        this(windowId, playerInventory, new BackpackInventory());
     }
 
-    public BackpackContainer(int windowId, PlayerInventory playerInventory, IInventory backpackInventory,
-            int backpackRows) {
+    public BackpackContainer(int windowId, PlayerInventory playerInventory, IInventory backpackInventory) {
         super(ContainerInit.BACKPACK.get(), windowId);
-        assertInventorySize(backpackInventory, backpackRows * 9);
+        assertInventorySize(backpackInventory, backpackInventory.getSizeInventory());
         this.backpackInventory = backpackInventory;
-        this.rows = backpackRows;
+        this.rows = backpackInventory.getSizeInventory() / 9;
         backpackInventory.openInventory(playerInventory.player);
 
         int offset = (this.rows - 4) * 18;

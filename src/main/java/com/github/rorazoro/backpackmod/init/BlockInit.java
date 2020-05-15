@@ -4,7 +4,7 @@ import com.github.rorazoro.backpackmod.blocks.BackpackBlock;
 import com.github.rorazoro.backpackmod.util.ModConstants;
 
 import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
+import net.minecraft.block.Blocks;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -14,5 +14,5 @@ public class BlockInit {
             ModConstants.MODID);
 
     public static final RegistryObject<BackpackBlock> BACKPACK = BLOCKS.register("backpack",
-            () -> new BackpackBlock(Block.Properties.create(Material.ROCK)));
+            () -> new BackpackBlock(Block.Properties.from(Blocks.DIRT)));
 }

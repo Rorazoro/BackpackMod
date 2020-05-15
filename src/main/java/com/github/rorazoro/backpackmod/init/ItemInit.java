@@ -15,5 +15,5 @@ public class ItemInit {
 
         public static final RegistryObject<BackpackItem> BACKPACK = ITEMS.register("backpack",
                         () -> new BackpackItem(BlockInit.BACKPACK.get(),
-                                        new Item.Properties().group(ItemGroups.MOD_ITEM_GROUP)));
+                                        new Item.Properties().group(ItemGroups.MOD_ITEM_GROUP).maxStackSize(1)));
 }
